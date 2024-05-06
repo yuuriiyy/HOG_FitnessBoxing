@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fitness Boxing</string>
+    <string name="result_score">Score: %d</string>
+    <string name="result_wholeScore">WholeScore: %d</string>
+    <string name="result_bestTimes">Best: %d</string>
+    <string name="result_goodTimes">Good: %d</string>
+    <string name="result_missTimes">Miss: %d</string>
+
+</resources>

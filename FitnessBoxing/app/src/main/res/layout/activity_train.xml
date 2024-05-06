@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TrainActivity"
+    android:background="@drawable/bg_result"
+    >
+
+    <TextView android:id="@+id/result_score"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="SVM Training"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Start"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        />
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Home"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        />
+
+</LinearLayout>
+

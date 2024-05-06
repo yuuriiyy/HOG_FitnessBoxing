@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:orientation="vertical"
+    android:id="@+id/buttonConstraintLayout"
+    android:background="@drawable/bg_game">
+
+
+    <Button
+        android:id="@+id/state"
+        android:layout_width="170dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/light_yellow"
+        android:text="||"
+        android:textColor="@color/black"
+        android:textSize="42dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/opencv_camera_preview"
+        android:layout_width="183dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
+        android:text="Score:0"
+        android:textColor="@color/white"
+        android:textSize="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/current_punch"
+        android:layout_width="245dp"
+        android:layout_height="308dp"
+        android:layout_marginTop="380dp"
+        android:src="@drawable/start"
+        android:tag="@drawable/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/next_punch"
+        android:layout_width="197dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="876dp"
+        android:src="@drawable/left_punch_next"
+        android:tag="@drawable/left_punch_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottom1"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="832dp"
+        android:backgroundTint="@color/light_yellow"
+        android:text="PUNCH!"
+        android:textColor="@color/purple"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <Button
+        android:id="@+id/bottom2"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="564dp"
+        android:layout_marginTop="1140dp"
+        android:backgroundTint="@color/light_yellow"
+        android:text="NEXT"
+        android:textColor="@color/purple"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
